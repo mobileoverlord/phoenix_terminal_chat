@@ -1,19 +1,26 @@
 # TerminalChat
 
-**TODO: Add description**
+Download the phoenix chat example
+https://github.com/chrismccord/phoenix_chat_example
 
-## Installation
+then start it
+```
+phoenix_chat_example> mix phoenix.server
+```
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+then chat with it
+```
+phoenix_terminal_chat> mix chat
+```
 
-  1. Add terminal_chat to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:terminal_chat, "~> 0.0.1"}]
-        end
-
-  2. Ensure terminal_chat is started before your application:
-
-        def application do
-          [applications: [:terminal_chat]]
-        end
+send messages
+```
+terminal: Hello
+[terminal] hello
+```
+change your name
+```
+terminal: /u my name
+my name: Hello
+[my name] Hello
+```
