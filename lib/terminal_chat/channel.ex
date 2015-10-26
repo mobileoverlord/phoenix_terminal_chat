@@ -11,7 +11,7 @@ defmodule TerminalChat.Channel do
 
   def handle_in(event, %{"user" => user, "body" => msg}, state) do
     #Logger.debug "[#{user}] #{msg}"
-    IO.puts "[#{user}] #{msg}"
+    IO.puts "\n[#{user}] #{msg}"
     {:noreply, state}
   end
 
